@@ -1,248 +1,143 @@
+<p align="center">
+  <a href="https://launchus.app/en"><img src="docs/images/brand/banner.png" alt="LaunchUS: form and run your US company from anywhere" width="100%"></a>
+</p>
+
+<p align="center">
+  <a href="https://launchus.app/en"><b>launchus.app</b></a> ·
+  <a href="https://launchus.app/en/pricing">Pricing</a> ·
+  <a href="https://launchus.app/en/guides">Guides</a> ·
+  <a href="https://launchus.app/en/tools">Free tools</a> ·
+  <a href="https://launchus.app">Türkçe</a>
+</p>
+
+<p align="center">
+  <img alt="License: MIT (tools)" src="https://img.shields.io/badge/tools-MIT-00D068">
+  <img alt="States" src="https://img.shields.io/badge/states-Wyoming%20%7C%20Delaware-001040">
+  <img alt="Languages" src="https://img.shields.io/badge/languages-English%20%7C%20T%C3%BCrk%C3%A7e-001040">
+</p>
+
 # LaunchUS
 
-**A guided U.S. company formation workflow platform for international founders.**
+**LaunchUS helps founders anywhere in the world form and run a US company: a Wyoming or Delaware LLC, the EIN, a registered agent, a US address, US tax filings and every yearly deadline, tracked in one customer panel.**
 
-LaunchUS helps founders move from scattered formation tasks, unclear requirements, and document confusion into a structured, transparent, and review-ready digital workflow.
+You tell us about your company once. We prepare and file the paperwork, keep your documents in one vault, scan your official mail and remind you before each deadline. You follow every step from the panel, in English or Turkish.
 
-The platform is designed for international entrepreneurs who want a clearer way to prepare, organize, and track the early steps of launching a U.S. company.
-
-> LaunchUS is a software-supported workflow and coordination platform. It is not a law firm, accounting firm, tax advisor, government agency, or substitute for professional legal, tax, or accounting advice.
+> This repository is the public home of LaunchUS on GitHub. It holds this overview and the **open-source calculators** that power the free tools on [launchus.app/en/tools](https://launchus.app/en/tools). The LaunchUS platform itself is not open source.
 
 ---
 
-## Overview
+## What LaunchUS does
 
-Starting a U.S. company from abroad can be difficult to manage.
+| Service | What you get |
+|---|---|
+| **US LLC formation** | Wyoming or Delaware LLC: name check, Articles of Organization / Certificate of Formation filed with the state, Operating Agreement. |
+| **EIN (no SSN needed)** | We prepare Form SS-4 for your signature and apply to the IRS for your Employer Identification Number. |
+| **LaunchUS Registered Agent** | A registered agent address in your state; official mail is scanned into your panel. |
+| **Business address / Virtual Office** | A US street address for invoices, bank applications and mail. Each bank or payment provider makes its own decision. |
+| **LaunchUS TAX** | Form 5472 with the pro forma Form 1120 and other US filings, prepared and signed by an independent US tax professional. |
+| **Annual compliance** | Wyoming annual report, Delaware LLC tax, registered agent renewal: dates in your calendar, filings done for you. |
+| **More** | DBA, LLC Health Check, ITIN, company closing (dissolution), invoices issued from your panel. |
 
-Founders often need to understand what information is required, prepare documents, coordinate service providers, track missing items, and follow post-formation steps. These tasks are usually spread across forms, emails, PDFs, provider portals, and manual checklists.
+Prices and package contents: **[launchus.app/en/pricing](https://launchus.app/en/pricing)**.
 
-LaunchUS brings that journey into a single guided experience.
+## The customer panel
 
-It helps users understand what needs to be completed, what is missing, what is under review, and what comes next.
+Every step, document and deadline of your company in one place. (Screens show the fictional company *Mavera Studio LLC*.)
 
----
+<table>
+  <tr>
+    <td width="33%"><img src="docs/images/panel/panel-1.webp" alt="Your US company in one panel"></td>
+    <td width="33%"><img src="docs/images/panel/panel-2.webp" alt="Timeline from formation to EIN"></td>
+    <td width="33%"><img src="docs/images/panel/panel-3.webp" alt="Document vault"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>One panel</b><br><sub>Formation steps, documents, official mail, dates and invoices.</sub></td>
+    <td align="center"><b>Timeline</b><br><sub>From formation to the EIN letter, every step visible.</sub></td>
+    <td align="center"><b>Document vault</b><br><sub>Articles, Operating Agreement, EIN letter, state mail.</sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/images/panel/panel-4.webp" alt="Registered agent mail scanning"></td>
+    <td><img src="docs/images/panel/panel-5.webp" alt="Annual obligations calendar"></td>
+    <td><img src="docs/images/panel/panel-6.webp" alt="Invoices"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Official mail</b><br><sub>Scanned into your vault, you get a notification.</sub></td>
+    <td align="center"><b>Deadlines</b><br><sub>Form 5472, annual report, agent renewal.</sub></td>
+    <td align="center"><b>Invoices</b><br><sub>Invoice your US clients in your company's name.</sub></td>
+  </tr>
+</table>
 
-## What LaunchUS Does
+## How it works
 
-LaunchUS provides a structured workflow for preparing and managing a U.S. company formation case.
+1. **Tell us about your company** — state, name, members, business activity.
+2. **We review and file** — the state filing, the registered agent and the Operating Agreement.
+3. **EIN** — we prepare the SS-4 for your signature and apply to the IRS.
+4. **Run the company** — documents, mail, invoices and yearly deadlines in your panel; LaunchUS TAX when filing season comes.
 
-The product helps users:
+State and IRS processing times are set by the state and the IRS and can change.
 
-- Start a guided company setup workflow
-- Enter founder, company, ownership, and business information
-- Upload and organize formation-related documents
-- Track missing or incomplete information
-- Understand document readiness
-- Review case progress from a customer dashboard
-- Approve important service steps
-- Prepare for Registered Agent coordination
-- Prepare information for EIN-related workflows
-- Follow post-formation readiness steps
+## Free open-source tools
 
----
+The calculators behind [launchus.app/en/tools](https://launchus.app/en/tools) are in [`tools/`](tools) under the MIT license: plain TypeScript, no dependencies, no network calls.
 
-## Key Features
+<table>
+  <tr>
+    <td width="33%"><a href="https://launchus.app/en/tools/do-i-need-form-5472"><img src="docs/images/form-5472-check.webp" alt="Do I need Form 5472?"></a></td>
+    <td width="33%"><a href="https://launchus.app/en/tools/form-5472-penalty-calculator"><img src="docs/images/form-5472-penalty.webp" alt="Form 5472 penalty calculator"></a></td>
+    <td width="33%"><a href="https://launchus.app/en/tools/wyoming-vs-delaware-cost-calculator"><img src="docs/images/posts/wyoming-or-delaware.jpg" alt="Wyoming vs Delaware cost calculator"></a></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Do I need Form 5472?</b><br><sub><code>tools/src/form-5472-check.ts</code></sub></td>
+    <td align="center"><b>Form 5472 penalty estimate</b><br><sub><code>tools/src/form-5472-penalty.ts</code></sub></td>
+    <td align="center"><b>Wyoming vs Delaware cost</b><br><sub><code>tools/src/state-cost.ts</code></sub></td>
+  </tr>
+</table>
 
-### Guided Formation Workflow
+```ts
+import { checkForm5472 } from './tools/src/form-5472-check.ts';
+import { stateCost } from './tools/src/state-cost.ts';
 
-LaunchUS walks founders through a step-by-step intake experience, helping collect the information needed to prepare a formation case in a structured and user-friendly way.
+checkForm5472(
+  { usLlc: 'yes', members: 'single', foreignOwner: 'yes', corporateElection: 'no', reportableTransaction: 'yes' },
+  2026,
+);
+// → { outcome: 'likelyRequired', reason: 'reportableTransaction', deadlines: { dueDate: '2027-04-15', ... } }
 
-### Missing Information Tracking
+stateCost({ state: 'WY', years: 3 }).totalUsd; // 222.4 (state fees only)
+```
 
-The platform highlights incomplete, missing, or inconsistent information so users can resolve blockers before a case moves forward.
+Run the tests (Node 22.18+): `cd tools && npm test`. Details: [tools/README.md](tools/README.md).
 
-### Document Readiness
+The tools give estimates from published IRS and state figures; they are not tax or legal advice. Fees change: check the official source linked next to each figure.
 
-LaunchUS organizes required information and documents into a readiness-focused workflow, helping users understand whether their case is ready for review.
+## From our social channels
 
-### Secure Document Vault Experience
+<table>
+  <tr>
+    <td width="33%"><img src="docs/images/posts/us-company-from-anywhere.jpg" alt="A US company, from anywhere"></td>
+    <td width="33%"><img src="docs/images/posts/how-to-open-a-us-company.jpg" alt="How to open a US company from abroad"></td>
+    <td width="33%"><img src="docs/images/posts/wyoming-or-delaware.jpg" alt="Wyoming or Delaware?"></td>
+  </tr>
+</table>
 
-Users can upload and access formation-related files through a controlled document area designed for operational review and customer visibility.
-
-### Customer Dashboard
-
-The dashboard gives users a clear view of their case status, pending actions, review progress, and next steps.
-
-### Registered Agent Coordination Flow
-
-LaunchUS supports a guided Registered Agent selection and approval workflow as part of the formation preparation journey.
-
-### EIN Preparation Support
-
-The platform helps collect and organize information typically needed for EIN-related preparation workflows while keeping authorization and review steps clear.
-
-### Human Review Foundation
-
-Important case steps are designed to pass through review before moving forward, helping reduce mistakes and improve operational quality.
-
-### Post-Formation Readiness
-
-LaunchUS is designed to support founders beyond the initial formation process with practical next-step guidance, document organization, and operational readiness workflows.
-
----
-
-## Why LaunchUS Exists
-
-International founders often face a fragmented experience when preparing to launch a U.S. company.
-
-Common challenges include:
-
-- Confusing requirements
-- Repeated information requests
-- Unclear document status
-- Disconnected service providers
-- Limited case visibility
-- Manual follow-ups
-- Unclear post-formation next steps
-
-LaunchUS aims to make the process more transparent, structured, and founder-friendly.
-
----
-
-## Product Principles
-
-### Clarity First
-
-Users should always understand what has been completed, what is missing, what is pending review, and what action should be taken next.
-
-### Review Before Critical Actions
-
-Formation workflows involve important information and documents. LaunchUS is designed around review-ready operations rather than unchecked automation.
-
-### Secure by Design
-
-Customer files and case information are intended to be handled through controlled access flows, audit-friendly records, and privacy-aware product decisions.
-
-### Founder-Friendly Experience
-
-LaunchUS is built to feel modern, simple, and approachable for founders who do not want to manage the process through scattered emails and static forms.
-
-### Global-Ready Foundation
-
-The product is designed for international founders and future expansion across broader workflows, markets, and post-formation services.
+Follow LaunchUS: [LinkedIn](https://www.linkedin.com/company/launchusapp) · [X](https://x.com/launchusapp) · [Instagram](https://www.instagram.com/launchus.app) · [Facebook](https://www.facebook.com/launchusapp) · [YouTube](https://www.youtube.com/@launchusapp)
 
 ---
 
-## Who It Is For
+## Türkçe
 
-LaunchUS is built for:
+**LaunchUS, dünyanın her yerinden girişimcilerin ABD şirketi kurmasına ve yönetmesine yardım eder:** Wyoming veya Delaware LLC, EIN, LaunchUS Kayıtlı Acente (Registered Agent), ABD adresi, ABD vergi beyanları (LaunchUS TAX) ve yıllık yükümlülükler. Her adımı Türkçe müşteri panelinden takip edersiniz.
 
-- International founders preparing to launch a U.S. company
-- Non-U.S. residents who want a clearer formation preparation workflow
-- Entrepreneurs who need better visibility into documents and next actions
-- Early-stage founders preparing for post-formation operations
-- Operators who want a more structured case management experience
+- Fiyatlar ve paketler: [launchus.app/fiyatlar](https://launchus.app/fiyatlar)
+- Rehberler: [launchus.app/rehber](https://launchus.app/rehber)
+- Ücretsiz araçlar: [launchus.app/araclar](https://launchus.app/araclar) (kaynak kodu bu repodaki `tools/` klasöründe, MIT lisansı)
 
----
+## Contact
 
-## What LaunchUS Is Not
+- Website: [launchus.app](https://launchus.app/en)
+- Customers: support@launchus.app
+- Partnerships and press: hello@launchus.app
 
-LaunchUS does not present itself as:
+## License
 
-- A law firm
-- A tax advisory service
-- An accounting firm
-- A government agency
-- A guaranteed approval service
-- A substitute for qualified professional advice
-
-Users should consult qualified professionals for legal, tax, accounting, immigration, or regulatory advice.
-
----
-
-## Example User Journey
-
-A typical LaunchUS journey may look like this:
-
-1. The founder creates an account.
-2. LaunchUS guides the founder through company setup questions.
-3. The founder provides required personal, company, and business information.
-4. The platform identifies missing or incomplete items.
-5. The founder uploads requested documents.
-6. LaunchUS organizes the case for readiness review.
-7. Important selections and authorizations are confirmed by the user.
-8. The case moves through review and coordination steps.
-9. The founder tracks progress from the dashboard.
-10. After formation preparation, the founder follows post-formation readiness steps.
-
----
-
-## High-Level Product Areas
-
-### Customer Portal
-
-A guided user-facing experience where founders complete onboarding, upload documents, review missing information, and track case progress.
-
-### Case Workflow
-
-A structured case journey that keeps formation preparation organized from intake to review and post-formation steps.
-
-### Document Center
-
-A controlled place for uploaded files, generated documents, and review-ready formation materials.
-
-### Review Operations
-
-A review-oriented workflow for checking readiness before sensitive steps move forward.
-
-### Partner Coordination
-
-A workflow layer for coordinating external services that may be needed during the formation journey.
-
-### Post-Formation Checklist
-
-A practical readiness layer for founders after formation, including operational tasks and reminders.
-
----
-
-## Privacy and Trust
-
-LaunchUS is designed with privacy, clarity, and trust in mind.
-
-This public repository intentionally does not include private source code, customer data, internal infrastructure details, provider-specific workflows, secrets, credentials, or operational playbooks.
-
-The product direction emphasizes:
-
-- Controlled document access
-- Clear user approvals
-- Audit-friendly user actions
-- Reduced unnecessary data collection
-- Secure handling of customer files and case records
-- Separation between public product positioning and private operational details
-
----
-
-## Current Status
-
-LaunchUS is under active product development.
-
-This public repository is intended for product positioning, public-facing project description, and high-level visibility only.
-
-Private implementation details and internal workflows are intentionally not included.
-
----
-
-## Future Direction
-
-LaunchUS may expand toward:
-
-- Broader state and jurisdiction support
-- Enhanced post-formation workflows
-- Compliance reminder foundations
-- Banking and payment readiness checklists
-- Founder operations tooling
-- Multi-language support
-- Improved document organization
-- More structured provider coordination workflows
-
----
-
-## Brand Promise
-
-**LaunchUS helps international founders move from scattered company formation tasks to a clear, guided, review-ready launch workflow.**
-
----
-
-## Disclaimer
-
-LaunchUS provides software-supported workflow, preparation, coordination, and operational visibility tools. It does not provide legal, tax, accounting, immigration, or financial advice. Any information presented by the product should be reviewed with qualified professionals where appropriate.
+The code in [`tools/`](tools) is released under the [MIT License](LICENSE). The LaunchUS name, logo, screenshots and images in `docs/images/` are © LaunchUS and are not covered by the MIT license.

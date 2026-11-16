@@ -1,0 +1,18 @@
+{
+  "name": "@launchus/us-llc-tools",
+  "version": "1.0.0",
+  "description": "Free, dependency-free calculators for foreign-owned US LLCs: Form 5472 check, Form 5472 penalty estimate, Wyoming vs Delaware state cost.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://launchus.app/en/tools",
+  "repository": { "type": "git", "url": "https://github.com/deniztuncerz/launchus-public.git", "directory": "tools" },
+  "keywords": ["us-llc", "form-5472", "wyoming-llc", "delaware-llc", "non-resident", "irs", "calculator"],
+  "engines": { "node": ">=22.18" },
+  "exports": {
+    "./form-5472-check": "./src/form-5472-check.ts",
+    "./form-5472-penalty": "./src/form-5472-penalty.ts",
+    "./form-5472-facts": "./src/form-5472-facts.ts",
+    "./state-cost": "./src/state-cost.ts"
+  },
+  "scripts": { "test": "node --test test/*.test.ts" }
+}
